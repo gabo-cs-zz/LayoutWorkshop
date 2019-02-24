@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+}
+
+header {
+  background: #370a37;
+}
+
+.logo {
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  background: url(../imgs/logo.png) no-repeat; 
+}
+
+.right-options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.right-options a:hover {
+  color: grey;
+}
+
+.toggle-options {
+  margin-left: 1em;
+}
+
+.divider {
+  margin: 0 1em;
+  text-align: center;
+  display: inline;
+  color: grey;
+}
+
+.divider::before {
+  content: "|";
+}
