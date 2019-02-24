@@ -3,7 +3,17 @@ html, body {
 }
 
 header {
-  background: #370a37;
+  position: fixed;
+  z-index: 9997;
+  width: 100%;
+  padding: 2em;
+  transition: all 0.4s ease;
+}
+
+.header-alt {
+  position: fixed;
+  background-color: #370a37;
+  padding: .5em 2em;
 }
 
 .logo {
@@ -35,4 +45,46 @@ header {
 
 .divider::before {
   content: "|";
+}
+
+.banner {
+  display: block;
+  height: 1000px;
+  background: url(../imgs/officebg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.title-text {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.title-text h2:first-child {
+  color: #fff;
+}
+
+.title-text h2 {
+  color: #ed322d;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.title-text p {
+  margin: 25px 30%;
+  color: #a8a8a8;
+}
+
+.scroll-wrap {
+  position: relative;
+  top: 17em;
+  text-align: center;
+}
+
+.scroll {
+  display: block;
+  width: 30px;
+  height: 62px;
+  margin: 20px auto 20px;
+  border: 2px solid #fff;
+  border-radius: 14px;
 }

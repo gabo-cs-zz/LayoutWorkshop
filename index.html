@@ -29,8 +29,50 @@
       </div>
     </nav>
   </header>
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="title-text">
+              <h2>RESEARCH & ANALYSIS</h2>
+              <h2>DRIVING RESULTS</h2>
+              <p>Anveshan is a research and analysis consultants that helps to make solid decisions and drive results.</p>
+              <div class="scroll-wrap">
+                <span class="scroll"></span>
+                <p>SCROLL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- ANOTHER SECTION--->
+    </section>
+  </main>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+
+    var header = document.getElementsByTagName("header")[0];
+
+    scrollChange();
+    
+    window.addEventListener('scroll', function() {
+      scrollChange();
+    });
+
+    function scrollChange(){
+      var scroll = $(window).scrollTop();
+      if (scroll >= 150) {
+        header.classList.add('header-alt');
+      } else {
+        header.classList.remove("header-alt");
+      }
+    }
+
+  </script>
 </body>
 </html>
