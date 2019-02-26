@@ -118,4 +118,40 @@ header {
   .scroll-wrap {
     margin-top: 120px;
   }
+
+}
+
+@media screen and (max-width: 638px){
+  header, .header-alt {
+    padding: .5em;
+  }
+  
+  navbar {
+    padding: 0 !important;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .right-options {
+    display: flex;
+  }
+  
+ .title-text {
+    margin-top: 250px;
+  }
+
+}
+
+@media screen and (max-width: 344px){
+    
+  .logo {
+    display: none;
+  }
+  
+   .title-text {
+    margin-top: 150px;
+   }
+  
 }
