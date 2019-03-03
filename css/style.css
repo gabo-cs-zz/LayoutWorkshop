@@ -1,6 +1,5 @@
 html, body {
   margin: 0;
-  transition: all 0.4s ease;
 }
 
 main {
@@ -227,8 +226,12 @@ header {
 
 .services {
   background: url(../media/services.jpg) no-repeat center center;
-  min-height: 970px;
+  min-height: 870px;
   background-size: cover;
+}
+
+.services .row {
+  margin: 0;
 }
 
 #services-p {
@@ -238,6 +241,74 @@ header {
   color: #a8a8a8;
   font-weight: 100;
   text-align: center;
+}
+
+.sect-wrapper {
+  width: 100%;
+}
+
+.sect {
+  display: inherit;
+  padding: 0;
+}
+
+.sect-arrow {
+  height: 130px;
+  width: 25%;
+  background-color: cyan;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.sect-arrow span {
+  font-size: 44px;
+  font-weight: lighter;
+  color: #9a417c;
+}
+
+.sect-text {
+  height: 130px;
+  width: 75%;
+  background-color: lightblue;
+  padding: 20px 0 0 20px;
+}
+
+.sect-text h5 {
+  color: #eaafd6;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sect-text p {
+  color: #c39fb7;
+  font-weight: 100;
+}
+
+.sa1 {
+  background-color: #802c64;
+}
+
+.st1 {
+  font-size: 85%;
+  background-color: #7a225d;
+}
+
+.sa2 {
+  background-color: #500c50;
+}
+
+.st2 {
+  font-size: 90%;
+  background-color: #480048;
+}
+
+.sa3 {
+  background-color: #3a0c3a;
+}
+
+.st3 {
+  font-size: 90%;
+  background-color: #300030;
 }
 
 @media screen and (max-width: 768px){
