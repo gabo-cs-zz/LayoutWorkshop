@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  transition: all 0.4s ease;
 }
 
 main {
@@ -12,6 +13,22 @@ header {
   width: 100%;
   padding: 2em;
   transition: all 0.4s ease;
+}
+
+#loader {
+  text-align: center;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 10em;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .5s, opacity .5s linear;
 }
 
 .header-alt {
@@ -102,6 +119,10 @@ header {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
+}
+
+.mt6 {
+  margin-top: 6%;
 }
 
 .info h2, .process h2 {
@@ -202,6 +223,21 @@ header {
   background-color: #802c64;
   transition: all 0.4s ease;
   z-index: 4;
+}
+
+.services {
+  background: url(../media/services.jpg) no-repeat center center;
+  min-height: 970px;
+  background-size: cover;
+}
+
+#services-p {
+  font-size: 24px;
+  display: block;
+  line-height: 37px;
+  color: #a8a8a8;
+  font-weight: 100;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px){
