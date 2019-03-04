@@ -178,7 +178,6 @@ header {
   font-size: 20px;
   margin-top: 100px;
   z-index: 3;
-  
 }
 
 #circle-planning {
@@ -231,7 +230,7 @@ header {
 
 .services {
   background: url(../media/services.jpg) no-repeat center center;
-  min-height: 870px;
+  min-height: 920px;
   background-size: cover;
 }
 
@@ -261,12 +260,11 @@ header {
   height: 130px;
   width: 25%;
   text-align: center;
-  padding-top: 8%;
+  padding-top: 3em;
 }
 
-.sect-arrow span {
-  font-size: 44px;
-  font-weight: lighter;
+.sect-arrow i {
+  font-size: 25px;
   color: #9a417c;
 }
 
@@ -278,7 +276,7 @@ header {
 
 .sect-text h5 {
   color: #eaafd6;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -315,78 +313,73 @@ header {
   background-color: #300030;
 }
 
-@media screen and (max-width: 768px){
-  .scroll-wrap {
-    margin-top: 120px;
-  }
+#next-image {
+  text-align: center;
 }
 
-@media screen and (max-width: 638px){
-  header, .header-alt {
-    padding: .5em;
-  }
-  
-  navbar {
-    padding: 0 !important;
-  }
-  
-  .logo {
-    width: 60px;
-  }
-  
-  .right-options {
-    display: flex;
-  }
-  
- .title-text {
-    margin-top: 250px;
-  }
+#next-image img {
+  margin-top: -80px;
 }
 
-@media screen and (max-width: 344px){
-    
-  .logo {
-    display: none;
-  }
-  
-   .title-text {
-    margin-top: 150px;
-   }
+.nextstep-text h2 {
+  color: #404040;
+  font-weight: bold;
+  font-size: 60px;
 }
 
-@media screen and (max-width: 992px){
-  
-  #circle-meeting {
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
-    font-size: 12px;
-    margin-top: 50px;
-  }
-  
-  #circle-planning {
-    height: 150px;
-    width: 150px;
-    padding-top: 60px;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  
-  #circle-execute {
-    height: 150px;
-    width: 150px;
-    line-height: 150px;
-    font-size: 12px;
-    margin-top: 10px;
-  }
+.nextstep-text p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+}
 
-  #circle-deliver {
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
-    font-size: 12px;
-    margin-top: 50px;
-  }
+.nextstep {
+  background: url(../media/nextstep.jpg) no-repeat center center;
+  min-height: 920px;
+  background-size: cover;
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+#form-wrapper {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  width: 820px;
+  height: 590px;
+  margin: 3em auto 0;
+}
+
+#form {
+  padding: 120px 0 100px;
+  width: 480px;
+  margin: 0 auto;
+}
+
+#form input[type*="e"], #form textarea {
+  width: 100%;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 40px;
+  color: #8e8e8e;
+  font-weight: 300;
+  display: block;
+  outline: 0 none;
+}
+
+#form input[type="submit"] {
+  background: none;
+  border: 2px solid #878787;
+  color: #3c3c3c;
+  width: 13em;
+  height: 3.5em;
+  font-weight: 500;
+}
+
+#form input[type*="e"]:focus, #form textarea:focus {
+  border-bottom: 1px solid #878787;
 }
 
 @media screen and (max-width: 992px){
@@ -423,5 +416,57 @@ header {
     font-size: 11px;
     margin-top: 30px;
   }
+  
+  #form-wrapper {
+    width: 100%;
+  }
+  
+}
 
+@media screen and (max-width: 768px){
+  .scroll-wrap {
+    margin-top: 120px;
+  }
+  
+  .nextstep-text h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 638px){
+  header, .header-alt {
+    padding: .5em;
+  }
+  
+  navbar {
+    padding: 0 !important;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .right-options {
+    display: flex;
+  }
+  
+ .title-text {
+    margin-top: 250px;
+  }
+  
+  #form {
+    width: 100%;
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 344px){
+    
+  .logo {
+    display: none;
+  }
+  
+   .title-text {
+    margin-top: 150px;
+   }
 }
