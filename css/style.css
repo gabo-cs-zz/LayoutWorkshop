@@ -352,7 +352,7 @@ header {
 }
 
 #form {
-  padding: 120px 0 100px;
+  padding-top: 120px;
   width: 480px;
   margin: 0 auto;
 }
@@ -382,6 +382,43 @@ header {
   border-bottom: 1px solid #878787;
 }
 
+footer {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#networks a {
+  display: inline-block;
+  color: #8a8a8a;
+  border: 1px solid #8a8a8a;
+  height: 45px;
+  width: 45px;
+  font-size: 1em;
+  line-height: 45px;
+  margin: 0 15px;
+}
+
+#basic-info {
+  margin-top: 2em;
+}
+
+#basic-info p {
+  line-height: 25px;
+  color: #8e8e8e;
+  font-weight: 300;
+}
+
+#author {
+  margin-top: 2.5em;
+}
+
+#author p {
+  line-height: 10px;
+  color: #8e8e8e;
+  font-weight: 300;
+}
+
+/* Media Queries: */
 @media screen and (max-width: 992px){
 
  #circle-meeting {
@@ -456,7 +493,7 @@ header {
   
   #form {
     width: 100%;
-    padding: 50px 50px;
+    padding: 50px 50px 0;
   }
 }
 
